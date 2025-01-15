@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth; // Import the Auth facade
 
@@ -20,5 +21,11 @@ class AdminController extends Controller
 
         // Redirect to the homepage
         return redirect('/login');
+    }
+
+    public function Profile(){
+        $id = Auth::user()->id;
+        $adminData = User::find($id);
+        return view('admin.admin_profile_view',compact('adminData'));  
     }
 }
