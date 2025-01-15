@@ -3,6 +3,8 @@
         <meta charset="utf-8" />
         <title>Login</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">  
         <!-- Bootstrap Css -->
         <link href="{{ asset('backend/assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Icons Css -->
@@ -85,6 +87,10 @@
         <!-- Scripts -->
         <script src="{{ asset('backend/assets/libs/jquery/jquery.min.js') }}"></script>
         <script src="{{ asset('backend/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/metismenu/metisMenu.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/node-waves/waves.min.js') }}"></script>
+    
         <script src="{{ asset('backend/assets/js/app.js') }}"></script>
     </body>
 </html>
