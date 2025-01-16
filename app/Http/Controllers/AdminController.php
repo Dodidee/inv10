@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth; // Import the Auth facade
 
+
 class AdminController extends Controller
 {
     public function destroy(Request $request)
