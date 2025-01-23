@@ -28,6 +28,11 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        $notification = array(
+            'message' => 'User Login Successfully',
+            'alert-type' => 'success'
+        );
+
         return redirect()->intended(route('dashboard', absolute: false));
     }
 

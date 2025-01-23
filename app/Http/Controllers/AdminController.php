@@ -20,8 +20,14 @@ class AdminController extends Controller
         // Regenerate the session token to prevent CSRF attacks
         $request->session()->regenerateToken();
 
+        
+        $notification = array(
+            'message' => 'User Logout Successfully',
+            'alert-type' => 'success'
+        ); 
+
         // Redirect to the homepage
-        return redirect('/login');
+        return redirect('/login')->with($notification);
     }
 
     public function Profile(){
