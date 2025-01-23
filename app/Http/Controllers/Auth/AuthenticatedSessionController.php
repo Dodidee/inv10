@@ -33,7 +33,7 @@ class AuthenticatedSessionController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        return redirect()->intended(route('dashboard', absolute: false))->with($notification);
     }
 
     /**
